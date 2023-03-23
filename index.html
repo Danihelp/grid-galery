@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/custom.css">
+    <title>Galeria con Grid</title>
+</head>
+<body>
+    <div class="container">
+
+        <h1>Galeria Grid CSS</h1>
+        <small></small>
+        
+        <div class="galery">
+            <img class="galery-img" src="https://picsum.photos/481/300" alt="Imagen Ramdon">
+            <img class="galery-img" src="https://picsum.photos/262/508" alt="Imagen Ramdon">
+            <img class="galery-img" src="https://picsum.photos/323/310" alt="Imagen Ramdon">
+            <img class="galery-img" src="https://picsum.photos/254/280" alt="Imagen Ramdon">
+            <img class="galery-img" src="https://picsum.photos/365/350" alt="Imagen Ramdon">
+            <img class="galery-img" src="https://picsum.photos/316/320" alt="Imagen Ramdon">
+            <img class="galery-img" src="https://picsum.photos/347/360" alt="Imagen Ramdon">
+            <img class="galery-img" src="https://picsum.photos/298/380" alt="Imagen Ramdon">
+            <img class="galery-img" src="https://picsum.photos/409/330" alt="Imagen Ramdon">
+            <img class="galery-img" src="https://picsum.photos/261/500" alt="Imagen Ramdon">
+            <img class="galery-img" src="https://picsum.photos/322/310" alt="Imagen Ramdon">
+            <img class="galery-img" src="https://picsum.photos/253/280" alt="Imagen Ramdon">
+            <img class="galery-img" src="https://picsum.photos/364/350" alt="Imagen Ramdon">
+            <img class="galery-img" src="https://picsum.photos/315/320" alt="Imagen Ramdon">
+            <img class="galery-img" src="https://picsum.photos/345/360" alt="Imagen Ramdon">
+            <img class="galery-img" src="https://picsum.photos/297/380" alt="Imagen Ramdon">
+            <img class="galery-img" src="https://picsum.photos/408/330" alt="Imagen Ramdon">
+            <img class="galery-img" src="https://picsum.photos/269/500" alt="Imagen Ramdon">
+            <img class="galery-img" src="https://picsum.photos/320/310" alt="Imagen Ramdon">
+            <img class="galery-img" src="https://picsum.photos/250/280" alt="Imagen Ramdon">
+            <img class="galery-img" src="https://picsum.photos/360/350" alt="Imagen Ramdon">
+            <img class="galery-img" src="https://picsum.photos/311/320" alt="Imagen Ramdon">
+            <img class="galery-img" src="https://picsum.photos/340/360" alt="Imagen Ramdon">
+            <img class="galery-img" src="https://picsum.photos/290/380" alt="Imagen Ramdon">
+            <img class="galery-img" src="https://picsum.photos/400/330" alt="Imagen Ramdon">
+            <img class="galery-img" src="https://picsum.photos/268/500" alt="Imagen Ramdon">
+            <img class="galery-img" src="https://picsum.photos/320/310" alt="Imagen Ramdon">
+            <img class="galery-img" src="https://picsum.photos/250/280" alt="Imagen Ramdon">
+            <img class="galery-img" src="https://picsum.photos/360/350" alt="Imagen Ramdon">
+            <img class="galery-img" src="https://picsum.photos/311/320" alt="Imagen Ramdon">
+            <img class="galery-img" src="https://picsum.photos/341/360" alt="Imagen Ramdon">
+            <img class="galery-img" src="https://picsum.photos/292/380" alt="Imagen Ramdon">
+            <img class="galery-img" src="https://picsum.photos/403/330" alt="Imagen Ramdon">
+            <img class="galery-img" src="https://picsum.photos/264/400" alt="Imagen Ramdon">
+            <img class="galery-img" src="https://picsum.photos/325/310" alt="Imagen Ramdon">
+            <img class="galery-img" src="https://picsum.photos/256/680" alt="Imagen Ramdon">
+            <img class="galery-img" src="https://picsum.photos/367/550" alt="Imagen Ramdon">
+            <img class="galery-img" src="https://picsum.photos/318/480" alt="Imagen Ramdon">
+            <img class="galery-img" src="https://picsum.photos/348/360" alt="Imagen Ramdon">
+            <img class="galery-img" src="https://picsum.photos/291/610" alt="Imagen Ramdon">
+            <img class="galery-img" src="https://picsum.photos/402/600" alt="Imagen Ramdon">
+            <img class="galery-img" src="https://picsum.photos/263/501" alt="Imagen Ramdon">
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script>
+        const grid = document.querySelector(".galery");
+        imagesLoaded( grid, ()=>{
+            let msry = new Masonry( grid, {
+                itemSelector: ".galery-img",
+                columnWidth: 300,
+            })
+        })
+        
+
+
+
+    </script>
+</body>
+</html>
