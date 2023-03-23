@@ -1,0 +1,15 @@
+{
+  "name": "galeriagrid",
+  "version": "1.0.0",
+  "description": "Galeria utilizando Grid CSS",
+  "main": "index.html",
+  "scripts": {
+    "dev" : "web-dev-server --node-resolve --open --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@web/dev-server": "^0.1.36"
+  }
+}
