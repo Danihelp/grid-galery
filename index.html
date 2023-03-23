@@ -10,8 +10,12 @@
 <body>
     <div class="container">
 
-        <h1>Galeria Grid CSS</h1>
-        <small></small>
+        <header>
+            <h1>Galeria Grid CSS</h1>
+            <small>
+                Inspirated in Pinteres
+            </small>
+        </header>
         
         <div class="galery">
             <img class="galery-img" src="https://picsum.photos/481/300" alt="Imagen Ramdon">
@@ -61,18 +65,7 @@
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
     <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
-    <script>
-        const grid = document.querySelector(".galery");
-        imagesLoaded( grid, ()=>{
-            let msry = new Masonry( grid, {
-                itemSelector: ".galery-img",
-                columnWidth: 300,
-            })
-        })
-        
-
-
-
-    </script>
+    <script src="./js/grid.js"></script>
+   
 </body>
 </html>
